@@ -1,0 +1,32 @@
+{
+    "identifier": "com.mcmxcix.nova.esc",
+    "name": "Esc",
+    "organization": "MCMXCIX LLC",
+    "description": "A collection of common (un)escapes.",
+    "version": "1.0",
+    "categories": ["commands"],
+    
+    "main": "main.js",
+    
+    "activationEvents": [
+        "onCommand:esc.percentDecode"
+    ],
+    
+    "entitlements": {
+    },
+    
+    "commands": {
+        "editor": [
+            {
+                "title": "Percent Encode",
+                "command": "esc.percentEncode",
+                "when": "editorHasSelection"
+            },
+            {
+                "title": "Percent Decode",
+                "command": "esc.percentDecode",
+                "when": "editorHasSelection"
+            }
+        ]
+    }
+}
