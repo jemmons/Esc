@@ -1,3 +1,5 @@
+const uri = require("uri.js");
+
 exports.activate = function() {
 };
 
@@ -6,7 +8,7 @@ exports.deactivate = function() {
 };
 
 
-nova.commands.register("esc.percentDecode", curry(replaceSelectedTexts, decodeURIComponent));
+nova.commands.register("esc.percentDecode", curry(replaceSelectedTexts, uri.decodeQueryIncludingPlus));
 nova.commands.register("esc.percentEncode", curry(replaceSelectedTexts, encodeURIComponent));
 
 

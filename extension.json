@@ -9,7 +9,7 @@
     "main": "main.js",
     
     "activationEvents": [
-        "onCommand:esc.percentDecode"
+        "*"
     ],
     
     "entitlements": {
