@@ -18,13 +18,23 @@
     "commands": {
         "editor": [
             {
-                "title": "Percent Encode",
+                "title": "Encode Query",
                 "command": "esc.percentEncode",
                 "when": "editorHasSelection"
             },
             {
-                "title": "Percent Decode",
+                "title": "Decode Query",
                 "command": "esc.percentDecode",
+                "when": "editorHasSelection"
+            },
+            {
+                "title": "Encode Base64",
+                "command": "esc.base64Encode",
+                "when": "editorHasSelection"
+            },
+            {
+                "title": "Decode Base64",
+                "command": "esc.base64Decode",
                 "when": "editorHasSelection"
             }
         ]
